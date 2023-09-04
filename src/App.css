@@ -2,37 +2,202 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.hamNav{
+  display: none;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  list-style-type: none;
+  font-family: 'Montserrat';
+  justify-content: center;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+.hamburger{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  font-family: 'Fashonista';
+  font-size: 40px;
+  height: 100%;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 10px;
+}
+
+.tabsHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white
+}
+
+.home{
+  background-image: url('./assets/wp4991626.webp');
+}
+
+.hello{
+  width: 50%;
+  height: 70vh;
+}
+
+.homeBack{
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(153deg, rgba(0,0,0,1) 39%, rgba(22,46,79,0) 100%, rgba(58,123,213,0) 100%);
+  display: flex;
+  flex-direction: row;
+}
+
+.quoteContainer{
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.mainQuote{
+  font-size: 50px;
+  font-family: 'Yeseva One';
+}
+
+.quote{
+  width: 100%;
+  text-align: left;
   color: white;
+  padding: 10px;
+  display: grid;
 }
 
-.App-link {
-  color: #61dafb;
+.doubleleft{
+  font-family: 'Black Ops One';
+  font-size: 180px;
+  background: rgb(123,67,151);
+  background: linear-gradient(90deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.doubleright{
+  font-family: 'Black Ops One';
+  font-size: 180px;
+  background: #7b4397;
+  background: linear-gradient(90deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.testimonials{
+  margin: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headingTesti{
+  font-size: 4.5em;
+  max-width: 90%;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: 1000;
+  margin: 70px;
+  background: linear-gradient(90deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.contactus{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 150px;
+}
+
+.contactUsHeading{
+  color: white;
+  font-size: 4.5em;
+  font-weight: 1000;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gradient{
+  background: linear-gradient(90deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1320px){
+  .contactus{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 2fr;
+    place-items: center;
+    margin: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contactUsHeading{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 3em;
+    align-items: center;
   }
+}
+
+@media screen and (max-width: 1200px){
+  .hello{
+    width:100%;
+  }
+  
+  .quoteContainer{
+    display: none;
+  }
+
+  .homeBack{
+    flex-direction: column;
+  }
+}
+
+@media(max-width:991px) {
+    .navigation {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .headingTesti{
+      margin: 10%;
+      font-size: 3em;
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
 }

@@ -1,0 +1,42 @@
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#svg path{
+    stroke-dasharray: 1693;
+    stroke-dashoffset: 1693;
+    animation: hello 5s ease-in-out alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  #svg{
+    aspect-ratio: 264 / 115;
+    width: 30%;
+    position: absolute;
+  }
+  
+  #svg1 path{
+    stroke-dasharray: 1693;
+    stroke-dashoffset: 1693;
+    animation: hello 5s ease-in-out alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  #svg1{
+    position: absolute;
+    aspect-ratio: 264 / 115;
+    width: 30%;
+    filter: blur(17px);
+  }
+  
+  @keyframes hello{
+    from{
+      stroke-dashoffset: 1698;
+    }
+  
+    to{
+      stroke-dashoffset: 0;
+    }
+  }
