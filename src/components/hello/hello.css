@@ -40,3 +40,13 @@
       stroke-dashoffset: 0;
     }
   }
+
+  @media(max-width: 600px){
+    #svg{
+      width: 50%;
+    }
+  
+    #svg1{
+      width: 50%;
+    }
+  }

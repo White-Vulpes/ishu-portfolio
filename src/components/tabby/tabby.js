@@ -40,9 +40,9 @@ function Tabby() {
 
     return (
         <div>
-            <div className='tabs'>
+            <div className='tabs' id='tabs'>
                 <Box sx={{ width: '100%', marginTop: '50px'}}>
-                    <Tabs value={value} onChange={handleChange} variant='fullWidth' TabIndicatorProps={{style: {borderRadius: '10px',   background: 'linear-gradient(90deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%)'}}}>
+                    <Tabs value={value} onChange={handleChange} variant='scrollable' TabIndicatorProps={{style: {borderRadius: '10px',   background: 'linear-gradient(90deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%)'}}}>
                         <StyledTab label="JEWELLERY" sx={{color: 'white', fontFamily: 'Montserrat', fontSize: '18px', fontStyle: 'bold',}}/>
                         <StyledTab label="PRODUCTS" sx={{color: 'white', fontFamily: 'Montserrat', fontSize: '18px', fontStyle: 'bold',}}/>
                         <StyledTab label="MODEL" sx={{color: 'white', fontFamily: 'Montserrat', fontSize: '18px', fontStyle: 'bold',}}/>

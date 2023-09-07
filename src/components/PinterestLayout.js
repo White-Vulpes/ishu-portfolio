@@ -4,7 +4,7 @@ import Card from './Card.js';
 
 function PinterestLayout() {
     return (
-        <div style={styles.pin_container}>
+        <div style={styles.pin_container} className='tabby'>
             <Card size="small"/>
             <Card size="medium" />
             <Card size="large" />
@@ -28,7 +28,6 @@ const styles = {
         padding: 0,
         width: '100%',
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
         gridAutoRows: '10px',
         justifyContent: 'center',
         backgroundColor: 'black'
