@@ -15,7 +15,7 @@ This is the source code for my personal portfolio website, showcasing my project
 
 ## Demo
 
-Check out the live version of the portfolio [here](old.ishitanahar.com).
+Check out the live version of the portfolio [here](https://old.ishitanahar.com).
 
 ## Features
 
